@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <link rel="shortcut icon" href="./punto-de-venta" type="image/x-icon" />
       <body
         className={`${outfit.className} bg-gray-200 dark:bg-gray-900`}
       >

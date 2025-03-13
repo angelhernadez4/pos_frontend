@@ -4,7 +4,7 @@ import { getSalesByDate } from "@/src/api/api";
 import { dehydrate, HydrationBoundary, QueryClient } from "@tanstack/react-query";
 import { format } from "date-fns";
 
-export default async function Salespage() {
+export default async function SalesPage() {
     const queryClient = new QueryClient()
     const today = new Date()
     const formattedDate = format(today, 'yyyy-MM-dd')
