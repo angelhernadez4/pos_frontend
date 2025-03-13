@@ -18,7 +18,7 @@ export default function AddCouponForm({ children }: { children: React.ReactNode 
             toast.success(state.success)
             router.push('/admin/coupons')
         }
-    }, [state])
+    }, [state, router])
     return (
         <form className="space-y-5" action={dispatch}>
             {children}

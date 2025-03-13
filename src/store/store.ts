@@ -30,7 +30,7 @@ const initialState = {
 export const useStore = create<Store>()(devtools((set, get) => ({
     ...initialState,
     addToCart: (product) => {
-        const { _id: productId, categoryId, ...data } = product
+        const { _id: productId, ...data } = product
         let contents : ShoppingCart = []
         const duplicated = get().contents.findIndex(item => item.productId === productId)
         if (duplicated >= 0) {

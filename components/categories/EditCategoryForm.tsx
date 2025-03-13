@@ -21,7 +21,7 @@ export default function EditCategoryForm({ children }: { children: React.ReactNo
             toast.success(state.success)
             router.push('/admin/categories')
         }
-    }, [state])
+    }, [state, router])
     return (
         <form className="space-y-5" action={dispatch}>
             {children}

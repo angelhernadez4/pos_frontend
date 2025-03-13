@@ -11,7 +11,7 @@ export default function DeleteProductForm({ productId } : { productId: Product['
             })
             await req.json()
         } catch (error) {
-            
+            console.error(error);
         } finally {
             revalidatePath('/admin/products')
         }

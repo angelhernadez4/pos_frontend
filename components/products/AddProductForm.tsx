@@ -20,7 +20,7 @@ export default function AddProductForm({ children } : { children : React.ReactNo
             toast.success(state.success)
             router.push('/admin/products')
         }
-    }, [state])
+    }, [state, router])
     return (
         <form className="space-y-5" action={dispatch}>
             {children}

@@ -11,7 +11,7 @@ export default function DeleteCouponForm({ couponId } : { couponId: Coupon['_id'
             })
             await req.json()
         } catch (error) {
-
+            console.error(error);
         } finally {
             revalidatePath('/admin/products')
         }

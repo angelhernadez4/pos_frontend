@@ -11,7 +11,7 @@ export default function DeleteCategoryForm({ categoryId }: { categoryId: Categor
             })
             await req.json()
         } catch (error) {
-
+            console.error(error);
         } finally {
             revalidatePath('/admin/products')
         }
