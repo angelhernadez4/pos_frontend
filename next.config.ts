@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'pos-backend-3vgj.onrender.com'
+                hostname: "pos-backend-3vgj.onrender.com"
             },
             {
                 protocol: 'https',
